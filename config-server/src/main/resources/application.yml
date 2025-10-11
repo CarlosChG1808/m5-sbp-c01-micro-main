@@ -1,0 +1,16 @@
+server:
+  port: 8888
+#Aplication name
+
+#spring.application.name=config-server
+spring:
+  aplication:
+    name: config-server
+
+    cloud:
+      config:
+            server:
+            git:
+                #File URI - Adjust path according to your system:
+                #windows: file:///C:/Users/YourUser/microservices-lab1/config-repo
+                uri:
