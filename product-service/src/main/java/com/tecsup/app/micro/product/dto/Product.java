@@ -1,5 +1,6 @@
 package com.tecsup.app.micro.product.dto;
 
+import com.tecsup.app.micro.product.client.User;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -16,5 +17,8 @@ public class Product {
     private BigDecimal price;
     private Integer stock;
     private String category;
-    private Integer createdBy;
+    //private Long createdBy;
+
+    //Para que me figure los datos del usuario qye ingreso el producto
+    private User createdbyUser;
 }

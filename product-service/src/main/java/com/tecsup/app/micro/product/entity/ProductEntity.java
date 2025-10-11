@@ -23,5 +23,5 @@ public class ProductEntity {
     private BigDecimal price;
     private Integer stock;
     private String category;
-    private Integer createdBy;
+    private Long createdBy;
 }
