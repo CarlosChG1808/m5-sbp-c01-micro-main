@@ -1,16 +1,18 @@
+# -- Application Configuration --
 server:
-  port: 8888
-#Aplication name
-
-#spring.application.name=config-server
+  port: 8084
 spring:
-  aplication:
+  application:
     name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          # File URI - Adjust path according to your system:
+          # Windows: file:///C:/Users/YourUser/microservices-lab1/config-repo
+          #uri: file://${user.home}/git_codigo/config-repo
+          uri: file:///D:/DevCarlos/config-repo
+          # Git Configuration
+          default-label: main
 
-    cloud:
-      config:
-            server:
-            git:
-                #File URI - Adjust path according to your system:
-                #windows: file:///C:/Users/YourUser/microservices-lab1/config-repo
-                uri:
+
